@@ -38,6 +38,9 @@ echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> ./feeds.conf
 # 在线用户
 # git clone https://github.com/selfcan/luci-app-onliner package/luci-app-onliner
 
+# 流量监测
+# git clone https://github.com/AlexZhuo/luci-app-bandwidthd.git package/luci-app-bandwidthd
+
 
 
 
