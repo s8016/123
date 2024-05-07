@@ -43,7 +43,7 @@ git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-pa
 git clone https://github.com/animegasan/luci-app-wolplus package/luci-app-wolplus
 
 # 实时流量监控
-# git clone https://github.com/firker/luci-app-wrtbwmon-zh package/luci-app-wrtbwmon-zh
+git clone https://github.com/firker/luci-app-wrtbwmon-zh package/luci-app-wrtbwmon-zh
 
 
 
