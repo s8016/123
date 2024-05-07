@@ -27,14 +27,14 @@ git clone https://github.com/gdck/luci-app-control-weburl package/luci-app-contr
 # git clone https://github.com/ywt114/luci-app-control-weburl package/luci-app-control-weburl
 
 # 定时限速
-git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
+# git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
 
 # 在线用户
 git clone https://github.com/selfcan/luci-app-onliner package/luci-app-onliner
 # git clone https://github.com/haiibo/luci-app-onliner package/luci-app-onliner
 
 # 应用过滤
-git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
+# git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
 
 # 家长控制
 git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
