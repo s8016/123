@@ -11,7 +11,7 @@
 #
 
 # 修改 Lan IP(修改后面的IP）
-sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.6.1/192.168.1.1/g' package/base-files/files/bin/config_generate
 
 # 修改 主机名称
 sed -i 's/ImmortalWrt/RAX3000M/g' package/base-files/files/bin/config_generate
