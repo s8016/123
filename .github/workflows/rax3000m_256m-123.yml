@@ -24,7 +24,7 @@ env:
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/123/240514.config
+  CONFIG_FILE: config/123/240514-1.config
   DIY_P1_SH: config/123/diy-part1.sh
   DIY_P2_SH: config/123/diy-part2.sh
   TZ: Asia/Shanghai
