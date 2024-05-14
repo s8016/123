@@ -20,14 +20,21 @@ sed -i 's/ImmortalWrt/RAX3000M/g' package/base-files/files/bin/config_generate
 sed -i 's/<0x580000 0x7200000>/<0x580000 0xea80000>/g' target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-cmcc-rax3000m.dts
 sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 
-# 更换主题#
+# 更换主题-开始#
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf package/small-package/luci-app-argon*
 rm -rf package/small-package/luci-theme-argon*
-
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-# 更换主题#
+# 更换主题-结束#
+
+# 增加主题-开始#
+#透明主题
+git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/luci-theme-infinityfreedom
+#主题-edge-动态登陆界面
+git clone https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
+# 增加主题-结束#
+
 
 # 删除冲突的软件包
 # rm -rf ./package/feeds/smpackage/core/Makefile
