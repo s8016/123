@@ -16,17 +16,20 @@ sed -i 's/192.168.6.1/192.168.1.1/g' package/base-files/files/bin/config_generat
 # 修改 主机名称
 sed -i 's/ImmortalWrt/RAX3000M/g' package/base-files/files/bin/config_generate
 
+# 修改默认wifi名称ssid为OpenWrt-K2P
+#sed -i 's/ssid=OpenWrt/ssid=OpenWrt-K2P/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
 # 修改 闪存为256M
 sed -i 's/<0x580000 0x7200000>/<0x580000 0xea80000>/g' target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-cmcc-rax3000m.dts
 sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 
 # 更换主题-开始#
-rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf package/small-package/luci-app-argon*
-rm -rf package/small-package/luci-theme-argon*
-git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+# rm -rf feeds/luci/themes/luci-theme-argon
+# rm -rf package/small-package/luci-app-argon*
+# rm -rf package/small-package/luci-theme-argon*
+# git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
+# git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
+# git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 # 更换主题-结束#
 
 # 增加主题-开始#
