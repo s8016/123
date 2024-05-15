@@ -35,13 +35,13 @@ git clone https://github.com/selfcan/luci-app-onliner package/luci-app-onliner
 # git clone https://github.com/haiibo/luci-app-onliner package/luci-app-onliner
 
 # 应用过滤
-git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
+# git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
 
 # 家长控制
 git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
 
 # 网络唤醒++
-git clone https://github.com/animegasan/luci-app-wolplus package/luci-app-wolplus
+# git clone https://github.com/animegasan/luci-app-wolplus package/luci-app-wolplus
 
 # 实时流量监控
 git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon
