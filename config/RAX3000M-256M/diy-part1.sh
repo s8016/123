@@ -12,6 +12,8 @@
 # 添加第三方插件库
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
+https://github.com/sundaqiang/openwrt-packages
+
 #添加额外软件包
 #家长控制
 # git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
