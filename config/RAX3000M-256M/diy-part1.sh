@@ -12,7 +12,7 @@
 # 添加第三方插件库
 echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> ./feeds.conf.default
 echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
-echo "src-git sundaqiang https://github.com/sundaqiang/openwrt-packages" >> ./feeds.conf.default
+# echo "src-git sundaqiang https://github.com/sundaqiang/openwrt-packages" >> ./feeds.conf.default
 
 
 
@@ -28,7 +28,7 @@ git clone https://github.com/gdck/luci-app-control-weburl package/luci-app-contr
 # git clone https://github.com/ywt114/luci-app-control-weburl package/luci-app-control-weburl
 
 # 定时限速
-git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
+# git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
 
 # 在线用户
 git clone https://github.com/selfcan/luci-app-onliner package/luci-app-onliner
@@ -38,11 +38,11 @@ git clone https://github.com/selfcan/luci-app-onliner package/luci-app-onliner
 # git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
 
 # 家长控制
-git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
+# git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
 
 # 网络唤醒++
 # git clone https://github.com/animegasan/luci-app-wolplus package/luci-app-wolplus
 
 # 实时流量监控
-git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon
-git clone https://github.com/brvphoenix/wrtbwmon package/wrtbwmon
+# git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon
+# git clone https://github.com/brvphoenix/wrtbwmon package/wrtbwmon
