@@ -45,3 +45,4 @@ git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-pa
 
 # 实时流量监控
 git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon
+git clone https://github.com/brvphoenix/wrtbwmon package/wrtbwmon
