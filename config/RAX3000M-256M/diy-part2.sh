@@ -21,25 +21,15 @@ sed -i 's/<0x580000 0x7200000>/<0x580000 0xea80000>/g' target/linux/mediatek/fil
 sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 
 # 删除冲突的软件包
-# rm -rf ./package/feeds/smpackage/core/Makefile
-# rm -rf ./package/feeds/smpackage/daed/Makefile
-# rm -rf ./package/feeds/smpackage/daed-next/Makefile
-# rm -rf ./package/feeds/smpackage/firewall4/Makefile
-# rm -rf ./package/feeds/smpackage/homeproxy/Makefile
-# rm -rf ./package/feeds/smpackage/luci-app-homeproxy/Makefile
-# rm -rf ./package/feeds/smpackage/luci-app-macvlan/Makefile
-# rm -rf ./package/feeds/smpackage/luci-app-tencentcloud-cos/Makefile
-
-# 删除冲突的软件包
 rm -rf ./package/istore
 # rm -rf ./feeds/kenzo/luci-app-quickstart
 # rm -rf ./feeds/kenzo/luci-app-store
 # rm -rf ./feeds/kenzo/luci-lib-taskd
 
-# find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
-# find ./ | grep Makefile | grep mosdns | xargs rm -f
+find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
+find ./ | grep Makefile | grep mosdns | xargs rm -f
 
-# git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-# git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
-# rm -rf feeds/packages/lang/golang
-# git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
