@@ -23,7 +23,7 @@ sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 
 # 删除冲突的软件包
 rm -rf ./package/istore
-# rm -rf ./feeds/kenzo/luci-app-istorex
+rm -rf ./feeds/kenzo/luci-app-istorex
 
 rm -rf ./feeds/small/luci-app-mosdns
 rm -rf ./feeds/small/mosdns
