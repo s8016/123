@@ -19,7 +19,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/l
 
 # 添加第三方插件库
 echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> ./feeds.conf.default
-echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
+# echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
 
 # 添加额外软件包
 
