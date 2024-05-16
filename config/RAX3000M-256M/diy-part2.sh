@@ -33,8 +33,13 @@ rm -rf ./package/istore
 # rm -rf ./feeds/kenzo/luci-app-store
 # rm -rf ./feeds/kenzo/luci-lib-taskd
 
+
+# add mosdns
 # find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 # find ./ | grep Makefile | grep mosdns | xargs rm -f
+
+rm -rf ./feeds/small/luci-app-mosdns
+rm -rf ./feeds/small/mosdns
 
 rm -rf feeds/packages/net/v2ray-geodata
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
