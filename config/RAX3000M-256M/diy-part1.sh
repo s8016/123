@@ -36,8 +36,9 @@ git clone https://github.com/gdck/luci-app-control-weburl package/luci-app-contr
 # git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
 
 # 在线用户
+git clone https://github.com/ElvenP/luci-app-onliner package/luci-app-onliner
 # git clone https://github.com/selfcan/luci-app-onliner package/luci-app-onliner
-git clone https://github.com/haiibo/luci-app-onliner package/luci-app-onliner
+# git clone https://github.com/haiibo/luci-app-onliner package/luci-app-onliner
 
 # 应用过滤
 # git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
