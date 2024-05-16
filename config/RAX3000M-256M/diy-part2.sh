@@ -40,6 +40,7 @@ rm -rf ./package/istore
 
 rm -rf ./feeds/small/luci-app-mosdns
 rm -rf ./feeds/small/mosdns
+rm -rf ./feeds/kenzo/luci-app-istorex
 
 # rm -rf feeds/packages/net/v2ray-geodata
 # git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
