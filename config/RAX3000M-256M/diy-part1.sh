@@ -10,8 +10,8 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 
 # 添加第三方插件库
-# echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> ./feeds.conf.default
-# echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
+echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> ./feeds.conf.default
+echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
 
 # 添加额外软件包
 
