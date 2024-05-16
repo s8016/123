@@ -25,12 +25,12 @@ sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 rm -rf ./package/istore
 # rm -rf ./feeds/kenzo/luci-app-istorex
 
-# rm -rf ./feeds/small/luci-app-mosdns
-# rm -rf ./feeds/small/mosdns
+rm -rf ./feeds/small/luci-app-mosdns
+rm -rf ./feeds/small/mosdns
 
 # add mosdns
-find ./feeds | grep Makefile | grep v2ray-geodata | xargs rm -f
-find ./feeds | grep Makefile | grep mosdns | xargs rm -f
+# find ./feeds | grep Makefile | grep v2ray-geodata | xargs rm -f
+# find ./feeds | grep Makefile | grep mosdns | xargs rm -f
 
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
