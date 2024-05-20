@@ -32,7 +32,8 @@ sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 # find ./feeds | grep Makefile | grep v2ray-geodata | xargs rm -f
 # find ./feeds | grep Makefile | grep mosdns | xargs rm -f
 
-# git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-# git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
-# rm -rf feeds/packages/lang/golang
-# git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+rm -rf feeds/packages/net/v2ray-geodata
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
