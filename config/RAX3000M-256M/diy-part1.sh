@@ -12,7 +12,7 @@
 # 添加第三方插件库
 echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> ./feeds.conf.default
 echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
-echo "src-git s8016 https://github.com/s8016/s8016-openwrt-packages" >> ./feeds.conf.default
+# echo "src-git s8016 https://github.com/s8016/s8016-openwrt-packages" >> ./feeds.conf.default
 
 
 
