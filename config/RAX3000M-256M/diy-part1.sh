@@ -19,10 +19,10 @@ echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
 # 添加额外软件包
 
 # 定时设置
-# git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
+git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
 
 # 魔改版-管控过滤[集成上网时间控制，黑白名单IP过滤，网址过滤几大功能]
-# git clone https://github.com/gdck/luci-app-control-weburl package/luci-app-control-weburl
+git clone https://github.com/gdck/luci-app-control-weburl package/luci-app-control-weburl
 
 # 管控过滤-普通版
 # git clone https://github.com/ywt114/luci-app-control-weburl package/luci-app-control-weburl
@@ -39,7 +39,7 @@ echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
 # git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
 
 # 家长控制
-# git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
+git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
 
 # 网络唤醒++
 # git clone https://github.com/animegasan/luci-app-wolplus package/luci-app-wolplus
