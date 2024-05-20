@@ -24,6 +24,8 @@ sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 
 
 # 删除冲突的软件包
+
+
 # rm -rf ./feeds/kenzo/luci-app-istorex
 # rm -rf ./feeds/small/luci-app-mosdns
 # rm -rf ./feeds/small/mosdns
@@ -32,8 +34,8 @@ sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 # find ./feeds | grep Makefile | grep v2ray-geodata | xargs rm -f
 # find ./feeds | grep Makefile | grep mosdns | xargs rm -f
 
-rm -rf feeds/packages/net/v2ray-geodata
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
-git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+# rm -rf feeds/packages/net/v2ray-geodata
+# rm -rf feeds/packages/lang/golang
+# git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+# git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+# git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
