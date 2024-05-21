@@ -36,17 +36,6 @@ sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 # git clone https://github.com/garypang13/luci-theme-edge.git package/luci-theme-edge
 # 增加主题-结束#
 
-
-# 删除冲突的软件包
-# rm -rf ./package/feeds/smpackage/core/Makefile
-# rm -rf ./package/feeds/smpackage/daed/Makefile
-# rm -rf ./package/feeds/smpackage/daed-next/Makefile
-# rm -rf ./package/feeds/smpackage/firewall4/Makefile
-# rm -rf ./package/feeds/smpackage/homeproxy/Makefile
-# rm -rf ./package/feeds/smpackage/luci-app-homeproxy/Makefile
-# rm -rf ./package/feeds/smpackage/luci-app-macvlan/Makefile
-# rm -rf ./package/feeds/smpackage/luci-app-tencentcloud-cos/Makefile
-
 # 删除冲突的软件包
 # rm -rf ./package/istore
 # rm -rf ./package/feeds/kenzo/luci-app-istorex
@@ -57,10 +46,13 @@ sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 # find ./ | grep *istore | grep *store | xargs rm -f
 # find ./ | grep quickstart | xargs rm -f
 
-# find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
-# find ./ | grep Makefile | grep mosdns | xargs rm -f
 
-# git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-# git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
-# rm -rf feeds/packages/lang/golang
-# git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+
+# add mosdns
+rm -rf ./feeds/small/luci-app-mosdns
+rm -rf ./feeds/small/mosdns
+rm -rf feeds/packages/net/v2ray-geodata
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
