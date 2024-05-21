@@ -54,6 +54,9 @@ rm -rf ./package/istore
 # rm -rf ./feeds/kenzo/luci-app-store
 # rm -rf ./feeds/kenzo/luci-lib-taskd
 
+find ./ | grep *istore | grep *store | xargs rm -f
+find ./ | grep quickstart | xargs rm -f
+
 # find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 # find ./ | grep Makefile | grep mosdns | xargs rm -f
 
