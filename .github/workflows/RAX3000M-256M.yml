@@ -22,9 +22,8 @@ on:
  
 
 env:
-#  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x
 #  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
-  REPO_URL: https://github.com/s8016/immortalwrt-mt798x
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/RAX3000M-256M/240520-4.config
