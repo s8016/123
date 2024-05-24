@@ -83,6 +83,14 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /mnt/workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
+    - name: 删除自带插件
+      run: |
+        cd openwrt
+        rm -rf ./package/istore
+        find ./ | grep *istore | grep *store | xargs rm -f
+        find ./ | grep quickstart | xargs rm -f
+
+
     - name: 加载插件源
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
